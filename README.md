@@ -1,5 +1,5 @@
 # leaderos-crasher
-Sends thousands of POST requests to do /register/ endpoint which crashes the server for `[alert] 20#20: 768 worker_connections are not enough`
+Sends thousands of POST requests to do /register/ endpoint which throws error `[alert] 20#20: 768 worker_connections are not enough`
 
 # Example
 <div style="display: flex; justify-content: space-between;">
