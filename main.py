@@ -6,7 +6,6 @@ import string, random
 url = "https://www.website.com"
 endpoint = "/register/"
 
-lock = threading.Lock()
 def getcsrf():
     r = requests.get(url + endpoint)
     csrf_matches = re.findall(r'<input type="hidden" name="csrf_token" value="(.*?)">', r.text)
