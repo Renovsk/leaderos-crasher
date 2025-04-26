@@ -65,9 +65,6 @@ def main():
 
     if r.status_code == 200:
         print(f"made account | email: {email} | username: {username} | password: {password}")
-        with lock:
-            with open('account.txt', 'a+') as file:
-                file.write(f"\n{username}:{password}")
 
     else:
         print(f"status: {r.status_code}")
